@@ -32,9 +32,9 @@ public class BasePage extends BaseTest {
     @Step("xPath<xpathClick> li elemente tikla")
     public void clickXpath(String xPathClick){
         String text = appiumDriver.findElement(By.xpath(xPathClick)).getText();
-        logger.info( text + " butonuna tiklanıyor");
+        logger.info( text + " butonuna tiklaniyor");
         appiumDriver.findElement(By.xpath(xPathClick)).click();
-        logger.info(text + " butonuna tiklandı");
+        logger.info(text + " butonuna tiklandi");
     }
 
     @Step("id<key> li elementin gorundugunu kontrol et")
