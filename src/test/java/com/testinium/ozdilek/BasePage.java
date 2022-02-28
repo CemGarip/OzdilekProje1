@@ -17,9 +17,14 @@ public class BasePage extends BaseTest {
 
     @Step("id<id> li elemente tikla")
     public void clickId(String id){
-        appiumDriver.findElement(By.id(id)).getText();
+        String text = appiumDriver.findElement(By.id(id)).getText();
         appiumDriver.findElement(By.id(id)).click();
         logger.info(id +"tiklandi");
+        if (text.equals("")) {
+            logger.info("Geri butonuna tiklandi");
+        } else {
+            logger.info( text + " butonuna tiklandi");
+        }
     }
 
     @Step("<wait> saniye bekle")
