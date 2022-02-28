@@ -32,7 +32,7 @@ public class BasePage extends BaseTest {
     @Step("xPath<xpathClick> li elemente tikla")
     public void clickXpath(String xPathClick){
         String text = appiumDriver.findElement(By.xpath(xPathClick)).getText();
-        logger.info( text + " butonuna tiklaniyor");
+        logger.info( text + " butonuna tiklaiyor");
         appiumDriver.findElement(By.xpath(xPathClick)).click();
         logger.info(text + " butonuna tiklandi");
     }

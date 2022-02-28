@@ -12,7 +12,7 @@
 
 #Kategoriler sayfası açılır
 *"3" saniye bekle
-*xPath"//*[@text='Kategoriler']" li elemente tikla
+*id"com.ozdilek.ozdilekteyim:id/nav_categories" li elemente tikla
 
 #Kategoriler sayfasının açıldığı doğrulanır
 *"3" saniye bekle
