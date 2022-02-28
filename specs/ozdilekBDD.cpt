@@ -1,0 +1,67 @@
+# Uygulamanın açıldığı kontrol edilir
+*"3" saniye bekle
+*id"com.ozdilek.ozdilekteyim:id/iv_storeIcon" li elementin gorundugunu kontrol et
+
+# Alışverişe başla butonuna tıklanır
+*"3" saniye bekle
+*id"com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" li elemente tikla
+
+#Alışveriş sayfasının açıldığı doğrulanır
+*"3" saniye bekle
+*id"com.ozdilek.ozdilekteyim:id/tvMarketName" li elementin gorundugunu kontrol et
+
+#Kategoriler sayfası açılır
+*"3" saniye bekle
+*xPath"//*[@text='Kategoriler']" li elemente tikla
+
+#Kategoriler sayfasının açıldığı doğrulanır
+*"3" saniye bekle
+*id"com.ozdilek.ozdilekteyim:id/relLayTop" li elementin gorundugunu kontrol et
+
+#Menüden Kadın seçeneğine tıklanır
+*"3" saniye bekle
+*xPath"//*[@text='Kadın']" li elemente tikla
+
+#Pantolon kategorisi açılır
+*"3" saniye bekle
+*xPath"//*[@text='Pantolon']" li elemente tikla
+
+#Sayfanın en aşağısına doğru 2 kere scroll edilir
+*"3" saniye bekle
+*Ekrani "2" defa kaydir ve "2" saniye bekle
+
+#Ürünler arasından rastgele bir ürün seçilir
+*Rastgele urun sec ve "3" saniye bekle
+
+#Ürün detay sayfasının açıldığı kontrol edilir
+*id"com.ozdilek.ozdilekteyim:id/tvItemDescription" li elementin gorundugunu kontrol et
+*"3" saniye bekle
+
+#Favoriler butonuna tıklanır
+*xPath"//*[@text='Listeme Ekle']" li elemente tikla
+*"3" saniye bekle
+
+#Giriş yapma sayfasının açıldığı doğrulanır
+*id"com.ozdilek.ozdilekteyim:id/btnLogin" li elementin gorundugunu kontrol et
+*"3" saniye bekle
+
+#Kullanıcı adı ve şifre bilgileri doldurulur
+*id"com.ozdilek.ozdilekteyim:id/etEposta" li alanini e-posta bilgisiyle id"com.ozdilek.ozdilekteyim:id/etPassword" li alani sifre bilgisiyle doldur
+*"3" saniye bekle
+
+#Geri butonuna 2 kere tıklanır
+*id"com.ozdilek.ozdilekteyim:id/ivBack" li elemente tikla
+*"3" saniye bekle
+*id"com.ozdilek.ozdilekteyim:id/ivBack" li elemente tikla
+*"3" saniye bekle
+
+#Rastgele bir ürün ve beden seçilir
+*Rastgele urun sec ve "3" saniye bekle
+*Rastgele beden sec ve "3" saniye bekle
+
+#Seçilen ürün sepete eklenir
+*xPath"//*[@text='SEPETE EKLE']" li elemente tikla
+*"3" saniye bekle
+
+
+
